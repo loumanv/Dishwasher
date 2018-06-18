@@ -77,12 +77,7 @@
 		032EE49320D80BAB007F2247 /* Dishwashers */ = {
 			isa = PBXGroup;
 			children = (
-				032EE49420D80BAB007F2247 /* AppDelegate.swift */,
-				032EE49620D80BAB007F2247 /* ViewController.swift */,
-				032EE49820D80BAB007F2247 /* Main.storyboard */,
-				032EE49B20D80BAD007F2247 /* Assets.xcassets */,
-				032EE49D20D80BAD007F2247 /* LaunchScreen.storyboard */,
-				032EE4A020D80BAD007F2247 /* Info.plist */,
+				032EE4B520D80C45007F2247 /* App */,
 			);
 			path = Dishwashers;
 			sourceTree = "<group>";
@@ -90,10 +85,73 @@
 		032EE4A820D80BAD007F2247 /* DishwashersTests */ = {
 			isa = PBXGroup;
 			children = (
-				032EE4A920D80BAD007F2247 /* DishwashersTests.swift */,
-				032EE4AB20D80BAD007F2247 /* Info.plist */,
+				032EE4BC20D80CA5007F2247 /* Model */,
+				032EE4BB20D80C99007F2247 /* Supporting Files */,
 			);
 			path = DishwashersTests;
+			sourceTree = "<group>";
+		};
+		032EE4B520D80C45007F2247 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				032EE4B620D80C4C007F2247 /* AppDelegate */,
+				032EE4BA20D80C89007F2247 /* Controller */,
+				032EE4B920D80C7D007F2247 /* Resources */,
+				032EE4B720D80C58007F2247 /* Supporting Files */,
+				032EE4B820D80C71007F2247 /* Views */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		032EE4B620D80C4C007F2247 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				032EE49420D80BAB007F2247 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		032EE4B720D80C58007F2247 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				032EE4A020D80BAD007F2247 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		032EE4B820D80C71007F2247 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				032EE49D20D80BAD007F2247 /* LaunchScreen.storyboard */,
+				032EE49820D80BAB007F2247 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		032EE4B920D80C7D007F2247 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				032EE49B20D80BAD007F2247 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		032EE4BA20D80C89007F2247 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				032EE49620D80BAB007F2247 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		032EE4BB20D80C99007F2247 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				032EE4AB20D80BAD007F2247 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +164,7 @@
 				032EE48D20D80BAB007F2247 /* Sources */,
 				032EE48E20D80BAB007F2247 /* Frameworks */,
 				032EE48F20D80BAB007F2247 /* Resources */,
+				032EE4B420D80BEE007F2247 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -191,6 +250,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		032EE4B420D80BEE007F2247 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		032EE48D20D80BAB007F2247 /* Sources */ = {
@@ -360,7 +436,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K877UC2B8P;
-				INFOPLIST_FILE = Dishwashers/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Dishwashers/App/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K877UC2B8P;
-				INFOPLIST_FILE = Dishwashers/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Dishwashers/App/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -397,7 +473,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K877UC2B8P;
-				INFOPLIST_FILE = DishwashersTests/Info.plist;
+				INFOPLIST_FILE = "DishwashersTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -418,7 +494,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K877UC2B8P;
-				INFOPLIST_FILE = DishwashersTests/Info.plist;
+				INFOPLIST_FILE = "DishwashersTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
