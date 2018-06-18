@@ -12,11 +12,14 @@
 		032EE49A20D80BAB007F2247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032EE49820D80BAB007F2247 /* Main.storyboard */; };
 		032EE49C20D80BAD007F2247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032EE49B20D80BAD007F2247 /* Assets.xcassets */; };
 		032EE49F20D80BAD007F2247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032EE49D20D80BAD007F2247 /* LaunchScreen.storyboard */; };
-		032EE4AA20D80BAD007F2247 /* DishwashersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4A920D80BAD007F2247 /* DishwashersTests.swift */; };
+		032EE4AA20D80BAD007F2247 /* DishwasherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4A920D80BAD007F2247 /* DishwasherTests.swift */; };
 		032EE4C120D81349007F2247 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4C020D81349007F2247 /* Factory.swift */; };
+		032EE4C420D813DF007F2247 /* Dishwasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4C320D813DF007F2247 /* Dishwasher.swift */; };
 		032EE4C720D8141F007F2247 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4C620D8141F007F2247 /* APIConstants.swift */; };
+		032EE4C920D8186D007F2247 /* dishwashers.json in Resources */ = {isa = PBXBuildFile; fileRef = 032EE4C820D8186D007F2247 /* dishwashers.json */; };
 		032EE4CB20D81CE0007F2247 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4CA20D81CE0007F2247 /* Price.swift */; };
 		032EE4CD20D81CFC007F2247 /* PriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4CC20D81CFC007F2247 /* PriceTests.swift */; };
+		032EE4CE20D86F1B007F2247 /* dishwashers.json in Resources */ = {isa = PBXBuildFile; fileRef = 032EE4C820D8186D007F2247 /* dishwashers.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +41,12 @@
 		032EE49E20D80BAD007F2247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		032EE4A020D80BAD007F2247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		032EE4A520D80BAD007F2247 /* DishwashersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DishwashersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		032EE4A920D80BAD007F2247 /* DishwashersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishwashersTests.swift; sourceTree = "<group>"; };
+		032EE4A920D80BAD007F2247 /* DishwasherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishwasherTests.swift; sourceTree = "<group>"; };
 		032EE4AB20D80BAD007F2247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		032EE4C020D81349007F2247 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		032EE4C320D813DF007F2247 /* Dishwasher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dishwasher.swift; sourceTree = "<group>"; };
 		032EE4C620D8141F007F2247 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		032EE4C820D8186D007F2247 /* dishwashers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dishwashers.json; sourceTree = "<group>"; };
 		032EE4CA20D81CE0007F2247 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 		032EE4CC20D81CFC007F2247 /* PriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +92,7 @@
 			children = (
 				032EE4B520D80C45007F2247 /* App */,
 				032EE4BD20D81125007F2247 /* Dishwashers */,
+				032EE4C520D81400007F2247 /* Networking */,
 			);
 			path = Dishwashers;
 			sourceTree = "<group>";
@@ -158,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				032EE4AB20D80BAD007F2247 /* Info.plist */,
+				032EE4C820D8186D007F2247 /* dishwashers.json */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -165,6 +172,7 @@
 		032EE4BC20D80CA5007F2247 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				032EE4A920D80BAD007F2247 /* DishwasherTests.swift */,
 				032EE4CC20D81CFC007F2247 /* PriceTests.swift */,
 			);
 			path = Model;
@@ -189,6 +197,7 @@
 		032EE4C220D813C8007F2247 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				032EE4C320D813DF007F2247 /* Dishwasher.swift */,
 				032EE4CA20D81CE0007F2247 /* Price.swift */,
 			);
 			path = Model;
@@ -284,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032EE4CE20D86F1B007F2247 /* dishwashers.json in Resources */,
 				032EE49F20D80BAD007F2247 /* LaunchScreen.storyboard in Resources */,
 				032EE49C20D80BAD007F2247 /* Assets.xcassets in Resources */,
 				032EE49A20D80BAB007F2247 /* Main.storyboard in Resources */,
@@ -294,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032EE4C920D8186D007F2247 /* dishwashers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +336,7 @@
 				032EE49720D80BAB007F2247 /* ViewController.swift in Sources */,
 				032EE49520D80BAB007F2247 /* AppDelegate.swift in Sources */,
 				032EE4CB20D81CE0007F2247 /* Price.swift in Sources */,
+				032EE4C420D813DF007F2247 /* Dishwasher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,8 +344,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				032EE4AA20D80BAD007F2247 /* DishwashersTests.swift in Sources */,
 				032EE4C120D81349007F2247 /* Factory.swift in Sources */,
+				032EE4AA20D80BAD007F2247 /* DishwasherTests.swift in Sources */,
 				032EE4CD20D81CFC007F2247 /* PriceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

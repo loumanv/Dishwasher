@@ -16,4 +16,12 @@ struct APIConstants {
         static let uom = "uom"
         static let currency = "currency"
     }
+
+    struct Dishwasher {
+        static let dishwashersArrayKey = "products"
+        static let dishwasherId = "productId"
+        static let title = "title"
+        static let price = "price"
+        static let rawImage = "image"
+    }
 }
