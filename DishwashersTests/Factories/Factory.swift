@@ -48,4 +48,9 @@ class Factory {
         let dictionary = try! JSONSerialization.jsonObject(with: data, options: .allowFragments) as! JSONDictionary
         return Dishwasher.array(json: dictionary)!
     }
+
+    static func createDishwashersViewModel() -> DishwashersViewModel {
+        let dishwashers = Factory.createDishwashers()
+        return DishwashersViewModel(dishwashers: dishwashers)
+    }
 }
