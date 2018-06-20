@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		032EE49520D80BAB007F2247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE49420D80BAB007F2247 /* AppDelegate.swift */; };
-		032EE49720D80BAB007F2247 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE49620D80BAB007F2247 /* ViewController.swift */; };
-		032EE49A20D80BAB007F2247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032EE49820D80BAB007F2247 /* Main.storyboard */; };
 		032EE49C20D80BAD007F2247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032EE49B20D80BAD007F2247 /* Assets.xcassets */; };
 		032EE49F20D80BAD007F2247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032EE49D20D80BAD007F2247 /* LaunchScreen.storyboard */; };
 		032EE4AA20D80BAD007F2247 /* DishwasherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4A920D80BAD007F2247 /* DishwasherTests.swift */; };
@@ -22,6 +20,16 @@
 		032EE4CE20D86F1B007F2247 /* dishwashers.json in Resources */ = {isa = PBXBuildFile; fileRef = 032EE4C820D8186D007F2247 /* dishwashers.json */; };
 		032EE4D120D8F9CB007F2247 /* DishwashersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4D020D8F9CB007F2247 /* DishwashersViewModel.swift */; };
 		032EE4D420D8FB82007F2247 /* DishwashersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4D320D8FB82007F2247 /* DishwashersViewModelTests.swift */; };
+		032EE4D820D92074007F2247 /* DishwashersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4D620D92074007F2247 /* DishwashersViewController.swift */; };
+		032EE4D920D92074007F2247 /* DishwashersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032EE4D720D92074007F2247 /* DishwashersViewController.xib */; };
+		032EE4DC20D92271007F2247 /* ContentLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4DB20D92271007F2247 /* ContentLoadable.swift */; };
+		032EE4DF20D922C9007F2247 /* ContentLoadableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4DE20D922C9007F2247 /* ContentLoadableTests.swift */; };
+		032EE4E220DA8278007F2247 /* DishwasherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4E020DA8278007F2247 /* DishwasherCell.swift */; };
+		032EE4E320DA8278007F2247 /* DishwasherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032EE4E120DA8278007F2247 /* DishwasherCell.xib */; };
+		032EE4E420DA882A007F2247 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4C020D81349007F2247 /* Factory.swift */; };
+		032EE4E620DAB0DA007F2247 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4E520DAB0DA007F2247 /* AppNavigationController.swift */; };
+		032EE4E820DAB24B007F2247 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 032EE4E720DAB24B007F2247 /* Localizable.strings */; };
+		032EE4EA20DAB75A007F2247 /* DishwashersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032EE4E920DAB75A007F2247 /* DishwashersViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +45,6 @@
 /* Begin PBXFileReference section */
 		032EE49120D80BAB007F2247 /* Dishwashers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dishwashers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		032EE49420D80BAB007F2247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		032EE49620D80BAB007F2247 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		032EE49920D80BAB007F2247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		032EE49B20D80BAD007F2247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		032EE49E20D80BAD007F2247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		032EE4A020D80BAD007F2247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +59,15 @@
 		032EE4CC20D81CFC007F2247 /* PriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTests.swift; sourceTree = "<group>"; };
 		032EE4D020D8F9CB007F2247 /* DishwashersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishwashersViewModel.swift; sourceTree = "<group>"; };
 		032EE4D320D8FB82007F2247 /* DishwashersViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishwashersViewModelTests.swift; sourceTree = "<group>"; };
+		032EE4D620D92074007F2247 /* DishwashersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishwashersViewController.swift; sourceTree = "<group>"; };
+		032EE4D720D92074007F2247 /* DishwashersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishwashersViewController.xib; sourceTree = "<group>"; };
+		032EE4DB20D92271007F2247 /* ContentLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLoadable.swift; sourceTree = "<group>"; };
+		032EE4DE20D922C9007F2247 /* ContentLoadableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLoadableTests.swift; sourceTree = "<group>"; };
+		032EE4E020DA8278007F2247 /* DishwasherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishwasherCell.swift; sourceTree = "<group>"; };
+		032EE4E120DA8278007F2247 /* DishwasherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishwasherCell.xib; sourceTree = "<group>"; };
+		032EE4E520DAB0DA007F2247 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		032EE4E720DAB24B007F2247 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		032EE4E920DAB75A007F2247 /* DishwashersViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishwashersViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +119,7 @@
 		032EE4A820D80BAD007F2247 /* DishwashersTests */ = {
 			isa = PBXGroup;
 			children = (
+				032EE4DD20D922A9007F2247 /* Controllers */,
 				032EE4BF20D8133B007F2247 /* Factories */,
 				032EE4BC20D80CA5007F2247 /* Model */,
 				032EE4BB20D80C99007F2247 /* Supporting Files */,
@@ -136,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				032EE4A020D80BAD007F2247 /* Info.plist */,
+				032EE4E720DAB24B007F2247 /* Localizable.strings */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -144,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				032EE49D20D80BAD007F2247 /* LaunchScreen.storyboard */,
-				032EE49820D80BAB007F2247 /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,7 +176,8 @@
 		032EE4BA20D80C89007F2247 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				032EE49620D80BAB007F2247 /* ViewController.swift */,
+				032EE4DB20D92271007F2247 /* ContentLoadable.swift */,
+				032EE4E520DAB0DA007F2247 /* AppNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -186,8 +203,10 @@
 		032EE4BD20D81125007F2247 /* Dishwashers */ = {
 			isa = PBXGroup;
 			children = (
+				032EE4D520D92058007F2247 /* Controllers */,
 				032EE4C220D813C8007F2247 /* Model */,
 				032EE4CF20D8F9AA007F2247 /* ViewModel */,
+				032EE4DA20D9207A007F2247 /* Views */,
 			);
 			path = Dishwashers;
 			sourceTree = "<group>";
@@ -231,6 +250,33 @@
 				032EE4D320D8FB82007F2247 /* DishwashersViewModelTests.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		032EE4D520D92058007F2247 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				032EE4D620D92074007F2247 /* DishwashersViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		032EE4DA20D9207A007F2247 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				032EE4E020DA8278007F2247 /* DishwasherCell.swift */,
+				032EE4E120DA8278007F2247 /* DishwasherCell.xib */,
+				032EE4D720D92074007F2247 /* DishwashersViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		032EE4DD20D922A9007F2247 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				032EE4DE20D922C9007F2247 /* ContentLoadableTests.swift */,
+				032EE4E920DAB75A007F2247 /* DishwashersViewControllerTests.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,9 +362,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				032EE4CE20D86F1B007F2247 /* dishwashers.json in Resources */,
+				032EE4E820DAB24B007F2247 /* Localizable.strings in Resources */,
 				032EE49F20D80BAD007F2247 /* LaunchScreen.storyboard in Resources */,
+				032EE4E320DA8278007F2247 /* DishwasherCell.xib in Resources */,
+				032EE4D920D92074007F2247 /* DishwashersViewController.xib in Resources */,
 				032EE49C20D80BAD007F2247 /* Assets.xcassets in Resources */,
-				032EE49A20D80BAB007F2247 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,10 +403,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				032EE4C720D8141F007F2247 /* APIConstants.swift in Sources */,
-				032EE49720D80BAB007F2247 /* ViewController.swift in Sources */,
+				032EE4E220DA8278007F2247 /* DishwasherCell.swift in Sources */,
 				032EE49520D80BAB007F2247 /* AppDelegate.swift in Sources */,
+				032EE4E620DAB0DA007F2247 /* AppNavigationController.swift in Sources */,
+				032EE4DC20D92271007F2247 /* ContentLoadable.swift in Sources */,
 				032EE4CB20D81CE0007F2247 /* Price.swift in Sources */,
+				032EE4E420DA882A007F2247 /* Factory.swift in Sources */,
 				032EE4D120D8F9CB007F2247 /* DishwashersViewModel.swift in Sources */,
+				032EE4D820D92074007F2247 /* DishwashersViewController.swift in Sources */,
 				032EE4C420D813DF007F2247 /* Dishwasher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,7 +419,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032EE4DF20D922C9007F2247 /* ContentLoadableTests.swift in Sources */,
 				032EE4C120D81349007F2247 /* Factory.swift in Sources */,
+				032EE4EA20DAB75A007F2247 /* DishwashersViewControllerTests.swift in Sources */,
 				032EE4AA20D80BAD007F2247 /* DishwasherTests.swift in Sources */,
 				032EE4D420D8FB82007F2247 /* DishwashersViewModelTests.swift in Sources */,
 				032EE4CD20D81CFC007F2247 /* PriceTests.swift in Sources */,
@@ -385,14 +439,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		032EE49820D80BAB007F2247 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				032EE49920D80BAB007F2247 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		032EE49D20D80BAD007F2247 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -532,7 +578,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.loumanv.Dishwashers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -550,7 +596,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.loumanv.Dishwashers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
