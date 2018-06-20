@@ -26,9 +26,14 @@ class DishwashersViewModel {
     }
 
     func image(for row: Int) -> URL? {
-        guard let rawImage = dishwashers[row].rawImage,
-            let imageURL = URL(string: rawImage) else { return nil }
+        guard let rawImage = dishwashers[row].rawImage else { return nil }
+        let rawImageWithScheme = "https:" + rawImage
+        guard let imageURL = URL(string: rawImageWithScheme) else { return nil }
         return imageURL
+    }
+
+    func refreshDishwashers(_ dishwashers: [Dishwasher]) {
+        self.dishwashers = dishwashers
     }
 
     private func curencySymbol(code: String) -> String {

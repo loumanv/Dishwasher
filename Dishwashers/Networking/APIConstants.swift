@@ -24,4 +24,16 @@ struct APIConstants {
         static let price = "price"
         static let rawImage = "image"
     }
+
+    struct UrlStrings {
+        static let baseUrl = "https://api.johnlewis.com"
+        static let products = "/v1/products"
+        static let search = "/search"
+        static let queryKey = "q"
+        static let queryValue = "dishwasher"
+        static let authkey = "key"
+        static let authValue = "Wu1Xqn3vNrd1p7hqkvB6hEu0G9OrsYGb"
+        static let pageSizeKey = "pageSize"
+        static let pageSizeValue = "20"
+    }
 }

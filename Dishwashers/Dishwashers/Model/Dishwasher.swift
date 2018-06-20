@@ -8,8 +8,6 @@
 
 import Foundation
 
-typealias JSONDictionary = [String: Any]
-
 enum DishwasherError: LocalizedError {
     case missingDishwasherId
     case missingTitle

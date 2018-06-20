@@ -26,7 +26,7 @@ class DishwashersViewModelTests: XCTestCase {
     }
 
     func testImageURLForRow() {
-        let expectedImageUrl = URL(string: "//johnlewis.scene7.com/is/image/JohnLewis/236888507?")
+        let expectedImageUrl = URL(string: "https://johnlewis.scene7.com/is/image/JohnLewis/236888507?")
         XCTAssertEqual(viewModel.image(for: 0), expectedImageUrl)
     }
 }

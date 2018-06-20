@@ -14,9 +14,10 @@ class DishwasherCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-//        imageView.image = nil
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageView.af_cancelImageRequest()
+        imageView.layer.removeAllAnimations()
+        imageView.image = nil
     }
 }

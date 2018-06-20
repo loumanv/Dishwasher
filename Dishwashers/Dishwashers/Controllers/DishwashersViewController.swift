@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class DishwashersViewController: UIViewController {
 
@@ -21,7 +22,7 @@ class DishwashersViewController: UIViewController {
         }
     }
 
-    let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .white)
+    let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,11 +40,14 @@ class DishwashersViewController: UIViewController {
     private func addNavigationItems() {
         let activityBarButton = UIBarButtonItem(customView: activityIndicator)
         navigationItem.rightBarButtonItem  = activityBarButton
-        activityIndicator.startAnimating()
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Reload",
                                                            style: .plain,
                                                            target: self,
-                                                           action: #selector(reloadView))
+                                                           action: #selector(reload))
+    }
+
+    @objc private func reload() {
+        refreshData()
     }
 
     private func showErrorMessage(title: String, message: String) {
@@ -56,6 +60,9 @@ class DishwashersViewController: UIViewController {
     func setup(_ cell: DishwasherCell, forRowAt indexPath: IndexPath) -> DishwasherCell {
         cell.titleLabel.text = viewModel?.title(for: indexPath.row)
         cell.priceLabel.text = viewModel?.price(for: indexPath.row)
+        if let imageUrl = viewModel?.image(for: indexPath.row) {
+            cell.imageView.af_setImage(withURL: imageUrl, imageTransition: .crossDissolve(0.30))
+        }
         return cell
     }
 
@@ -78,11 +85,25 @@ class DishwashersViewController: UIViewController {
 
 extension DishwashersViewController: ContentLoadable {
     func prepareData(_ completion: @escaping ContentLoadableCompletion) {
-        viewModel = DishwashersViewModel(dishwashers: Factory.createDishwashers())
-        completion(nil)
+        NetworkClient.shared.loadDishwashers { (dishwashers, error) in
+            guard error == nil, let dishwashers = dishwashers, dishwashers.count > 0 else {
+                // Show appropriate error message
+                let error = AppError(localizedTitle: "No dishwashers",
+                                     localizedDescription: "No dishwashers",
+                                     code: 4)
+                completion(error)
+                return
+            }
+            if self.viewModel == nil {
+                self.viewModel = DishwashersViewModel(dishwashers: dishwashers)
+            } else {
+                self.viewModel?.refreshDishwashers(dishwashers)
+            }
+            completion(nil)
+        }
     }
 
-    @objc func reloadView() {
+    func reloadView() {
         collectionView.reloadData()
     }
 
